@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftZant Technologies</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="icon" href="slogo.jpg">
+    <script src="softzant.js"></script>
+</head>
+<body>
+    <div id="head" class="menu_bar">
+        <img src="slogo.jpg" width="70">
+        <h1 class="logo1">SOFTZANT TECHNOLOGIES</h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li>
+                <a href="#Service">Services &#x25BE; </a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="software.html">software Development</a></li>
+                        <li><a href="dataanalyst.html">Data Analytics </a></li>
+                        <li><a href="mobile.html">Mobile Solutions</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#Carrers">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="fullcontainer1">
+            <div class="card  text-black1">
+            <img src="https://media.istockphoto.com/id/1416335096/photo/businessman-hand-holding-smart-phone-with-icon-mobile-phone-mail-telephone-and-address.jpg?b=1&s=170667a&w=0&k=20&c=O39_wq7HB2oZHV3pyeZDxFAq0Xb_zNvLKrAIEWDVveY=" class="card-img1" alt="..." width="100%" height="350px">
+            <div class="card-img-overlay1"> </div>
+            </div>
+   
+            <div class="phone1" style="background-color:lightseagreen"  >
+            <a href="" style="color: yellow;"><h1 style="color:yellow;">&#9743;</h1></a>
+            <a href="" style="color:white"><h3>CONTACT US</h3></a>
+            </div>
+            <br>
+            <div class="top-left1" style="color: black" ><h1 >Let's Talk To Us....</h1></div>
+             <div class="container1">
+               <div class="content-wrapper1">
+                   <div class="left-box1">
+                       <div class="form-container1">
+                           <form #contactForm="ngForm" (ngSubmit)="submitCP(contactForm.value)">
+                               <div>
+                                   <label for="name"><h4>Name</h4></label>
+                                   <input type="text" class="form-control" name="name" placeholder="Enter name" ngModel width="400">
+                               </div>
+                               <div>
+                                   <label for="query"><h4>Queries</h4></label>
+                                   <input type="text" class="form-control" name="queries" placeholder="How can I help you..." ngModel>
+                               </div>
+                               <div>
+                                   <label for="email"><h4>Registered Email ID</h4></label>
+                                   <input type="email" class="form-control" name="email" placeholder="Enter your registered email" ngModel>
+                                   <div *ngIf="reges" class="text-danger">Enter a registered Email ID</div>
+                               </div>
+                               <div>
+                                   <label for="phoneNumber"><h4>Contact Number</h4></label>
+                                   <input type="text" class="form-control" name="phoneNumber" placeholder="Enter number" ngModel required minlength="10" maxlength="10">
+                               </div>
+                               <div>
+                                   <label for="comments"><h4>Comment Box</h4></label>
+                                   <textarea name="comments" class="form-control" placeholder="Enter your comments here..." style="height: 150px;" ngModel required></textarea>
+                               </div>
+                               <button [disabled]="contactForm.invalid" routerLink="services" type="submit" class="btnbtn-primary">Submit</button>
+                           </form>
+                       </div>
+                   </div>
+                   <div class="right-box1">
+                       <div class="card1">
+                           <img src="https://img.freepik.com/free-photo/paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline_482257-43001.jpg" class="card-img-top1" alt="Safety Measures">
+                           <div class="card-body1">
+                               <h5 class="card-title1">Help Desk</h5>
+                               <p class="card-text">"Our Help Desk is here to assist you with any inquiries or issues—just a call away!"
+   
+   
+   
+   
+   
+   
+                               </p>
+                           </div>
+                       </div>
+                       <div class="card1">
+                           <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_519531072_349765.jpg " class="card-img-top1" alt="Staff Behavior">
+                           <div class="card-body1">
+                               <h5 class="card-title1">Rate Us</h5>
+                               <p class="card-text1">"Your feedback matters—rate us and help us improve!"</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+         </div>
+    </section>
+
+    <section class="footerClass">
+        <footer>
+         
+            <div class="row">
+            <div class="column">
+                <div><h1 class="st" >SOFTZANT TECHNOLOGIES</h1></div><img src="slogo.jpg" class="logo"  >
+                <p>Softzant Is Quickly Becoming An Industry Leader.
+                   We Make The Entire Process As Simple As Can Be
+                   While Allowing Our Clients To Fulfill Their Requirements
+                   With Ease And Simplicity </p>
+            </div>
+            <div class="column"><h3 class="stl">office <div class="underline"><span></span></div></h3>
+            <p>SOFTZANT TECHNOLOGIES pvt.ltd.,</p>
+            <p>NARAYANAGUDA</p>
+            <p>TELANGANA,HYDERABAD</p>
+            <p>PIN CODE-500050,INDIA</p>
+            <p class="email-id">SOFTZANTTECHNOLOGIES@GMAIL>COM</p>
+            <h4>+91 9999999999</h4>
+            </div>
+            <div class="column">
+            <h3 class="stl">Quick links <div class="underline"><span></span></div></h3>
+            <ul>
+            <li><a href="softzant.html">HOME</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="">QUARIES</a></li>
+            </ul>
+            </div>
+            <div class="column">
+            <h3 class="stl">Newsletter <div class="underline"><span></span></div></h3>
+            <form class="formClass"> 
+            <img src="tmail.jpg" width="30" style="margin-top: 15px;">
+            <input type="email" placeholder="enter your email id" class="footerInput" required>
+            <button type="submit"><img src="arrow.png" width="30"></button>
+            </form>
+            <div class="social-icons">
+            <img src="facebook.png" width="50" title="facebook">
+            <img src="insta.png" width="50" title="Instagram">
+            <img src="linkedin.png" width="50" title="Linkedin">
+            <img src="X.png" width="50" title="X">
+            </div>
+            </div>
+            </div>
+            <hr>
+            <p class="copyright">Easy Tutorials &copy; 2024 - All Rights Reserved </p>
+        
+            </footer>
+    </section>
+    </body>
+    </html>
